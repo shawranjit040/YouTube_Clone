@@ -23,9 +23,10 @@ const SearchInput = () => {
     }
 
     return (
-        <div id="searchBox" style={{color: "white"}} className="h-[46px] w-full md:w-[584px] flex items-center gap-3 px-4 border border-[#dfe1e5] rounded-3xl hover:bg-black hover:shadow-c hover:border-0 focus-within:shadow-c focus-within:border-0">
+        <div id="searchBox" className="h-[46px] w-full md:w-[584px] flex items-center gap-3 px-4 border border-[#dfe1e5] rounded-3xl hover:bg-black hover:shadow-c hover:border-0 focus-within:shadow-c focus-within:border-0">
             <AiOutlineSearch size={18} color="#9aa0a6"/>
             <input
+            style={{color: "white"}}
             type="text"
             onChange={(e) => setSearchQuery(e.target.value)} 
 
@@ -37,7 +38,7 @@ const SearchInput = () => {
 
             <div className="flex items-center gap-3">
                 {searchQuery && (
-                    <IoMdClose size={24} color="#70757a" className="cursor-pointer" 
+                    <IoMdClose size={24} color="white" className="cursor-pointer" 
                     onClick={() => setSearchQuery("") }
                     />
                 )}
