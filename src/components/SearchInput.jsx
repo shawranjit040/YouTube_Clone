@@ -23,7 +23,7 @@ const SearchInput = () => {
     }
 
     return (
-        <div id="searchBox" className="h-[46px] w-full md:w-[584px] style={{color: "white"}} flex items-center gap-3 px-4 border border-[#dfe1e5] rounded-3xl hover:bg-black hover:shadow-c hover:border-0 focus-within:shadow-c focus-within:border-0">
+        <div id="searchBox" style={{color: "white"}} className="h-[46px] w-full md:w-[584px] flex items-center gap-3 px-4 border border-[#dfe1e5] rounded-3xl hover:bg-black hover:shadow-c hover:border-0 focus-within:shadow-c focus-within:border-0">
             <AiOutlineSearch size={18} color="#9aa0a6"/>
             <input
             type="text"
