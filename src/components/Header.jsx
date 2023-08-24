@@ -59,11 +59,11 @@ const Header = () => {
                         src={ytLogo}
                         alt="Youtube"
                     />
-                    <img
+{/*                     <img
                         className="h-full md:hidden"
                         src={ytLogoMobile}
                         alt="Youtube"
-                    />
+                    /> */}
                 </Link>
             </div>
             <div className="group flex items-center">
@@ -73,7 +73,7 @@ const Header = () => {
                     </div>
                     <input
                         type="text"
-                        className="bg-transparent outline-none text-grey pr-5 pl-5 md:pl-0 w-44 md:group-focus-within:pl-0 md:w-64 lg:w-[500px]"
+                        className="bg-transparent outline-none text-white pr-5 pl-5 md:pl-0 w-44 md:group-focus-within:pl-0 md:w-64 lg:w-[500px]"
                         onChange={(e) => setSearchQuery(e.target.value)}
                         onKeyUp={searchQueryHandler}
                         placeholder="Search"
